@@ -1,0 +1,24 @@
+.brandsIcon{
+    margin: 10px;
+    width: 45px;
+    height: 45px;
+    border: 1px black solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.brandsIcon:hover{
+    background-color: #343A40;
+    color: white;
+} 
+.footerIcons{
+    color: black;
+    font-size: 20px;
+}
+.brandsIcon:hover .footerIcons {
+    color: white;
+}
+
