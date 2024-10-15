@@ -38,9 +38,12 @@ export default function OffcanvasComp() {
               <AccordionItemComp
                 eventKey="0"
                 content={
-                  <ol>
-                    <li>
-                      <Link to={"/icons"} className="text-decoration-none">Icons</Link>
+                  <ol className="d-flex flex-column gap-2">
+                    <li className="border-bottom">
+                      <Link to={"/icons"} className="text-decoration-none text-dark">Icons</Link>
+                    </li>
+                    <li className="border-bottom">
+                      <Link to={"/animation"} className="text-decoration-none text-dark">Animation</Link>
                     </li>
                   </ol>
                 }
