@@ -5,7 +5,8 @@ import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { FaBars, FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import AccordionItem from "../AccordionItem/AccordionItem";
+import AccordionItemComp from "../AccordionItem/AccordionItemComp";
+import { Link } from "react-router-dom";
 
 export default function OffcanvasComp() {
   const [show, setShow] = useState(false);
@@ -20,7 +21,7 @@ export default function OffcanvasComp() {
 
       <Offcanvas show={show} onHide={handleClose} placement="start">
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title className="fs-3">Link Utility</Offcanvas.Title>
+          <Offcanvas.Title className="fs-3"><Link to={'/'} className="text-decoration-none text-dark">Link Utility</Link></Offcanvas.Title>
         </Offcanvas.Header>
 
         <Offcanvas.Body className="d-flex flex-column h-100 justify-content-between">
@@ -34,33 +35,27 @@ export default function OffcanvasComp() {
           {/* Main Content */}
           <main className="flex-grow-1 py-4">
             <Accordion>
-              <Accordion.Item eventKey="0">
-                <Accordion.Header>Package #1</Accordion.Header>
-                <Accordion.Body>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </Accordion.Body>
-              </Accordion.Item>
-              <Accordion.Item eventKey="1">
-                <Accordion.Header>Package #2</Accordion.Header>
-                <Accordion.Body>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </Accordion.Body>
-              </Accordion.Item>
-              <AccordionItem eventKey="2" title="Package #3" content={`Google`}/>
+              <AccordionItemComp
+                eventKey="0"
+                content={
+                  <ol>
+                    <li>
+                      <Link to={"/icons"} className="text-decoration-none">Icons</Link>
+                    </li>
+                  </ol>
+                }
+                title="Styles"
+              />
+              <AccordionItemComp
+                eventKey="1"
+                content={`Lorem`}
+                title="Package #2"
+              />
+              <AccordionItemComp
+                eventKey="2"
+                title="Package #3"
+                content={`Google`}
+              />
             </Accordion>
           </main>
           {/* Footer Section */}

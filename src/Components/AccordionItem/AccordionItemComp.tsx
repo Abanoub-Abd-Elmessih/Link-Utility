@@ -7,7 +7,7 @@ interface AccordionItemProps {
     content: string | React.ReactNode;
   }
   
-const AccordionItem:React.FC<AccordionItemProps> = ({ eventKey, title, content }) => {
+const AccordionItemComp:React.FC<AccordionItemProps> = ({ eventKey, title, content }) => {
   return (
     <Accordion.Item eventKey={eventKey}>
       <Accordion.Header>{title}</Accordion.Header>
@@ -16,4 +16,4 @@ const AccordionItem:React.FC<AccordionItemProps> = ({ eventKey, title, content }
   );
 };
 
-export default AccordionItem;
+export default AccordionItemComp;
