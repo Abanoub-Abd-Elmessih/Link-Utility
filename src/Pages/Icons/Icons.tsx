@@ -1,29 +1,31 @@
 import { Container } from "react-bootstrap";
 import CardComp from "../../Components/CardComp/CardComp";
+import { linkData } from "../../data/linkData"; // Import the centralized data
 
 export default function Icons() {
+  const iconCards = linkData.filter((item) => item.category === "Icons");
+
   return (
-    <div>
-      <Container>
-        <p className="h3 text-center py-5">Icons</p>
-        <ul className="list-unstyled">
-          <li>
+    <Container>
+      <p className="h3 text-center py-5">Icons</p>
+      <ul className="list-unstyled">
+        {iconCards.map((card, index) => (
+          <li key={index} className="mb-3">
             <CardComp
-              header="React Icons"
-              text="React Icons is a library that enables developers to seamlessly integrate a diverse range of icons into their React applications. It supports numerous icon packs, including Font Awesome, Material Design Icons, and many others, allowing for a unified approach to styling and using icons across different projects."
+              header={card.header}
+              text={card.text}
               go={
                 <a
-                  href="https://react-icons.github.io/react-icons/"
+                  href={card.url}
                   target="_blank"
-                  className="text-white text-decoration-none"
                 >
                   Visit Now
                 </a>
               }
             />
           </li>
-        </ul>
-      </Container>
-    </div>
+        ))}
+      </ul>
+    </Container>
   );
 }

@@ -2,15 +2,14 @@ import { Button } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 
 interface CardItemProp {
-  className?: string;
   header: string;
   text: string;
   go: string | React.ReactNode;
 }
 
-const CardComp: React.FC<CardItemProp> = ({ header, text, go , className}) => {
+const CardComp: React.FC<CardItemProp> = ({ header, text, go }) => {
   return (
-    <Card className={className}>
+    <Card className={'text-dark text-decoration-none'}>
       <Card.Header as="h5">{header}</Card.Header>
       <Card.Body>
         <Card.Text>{text}</Card.Text>

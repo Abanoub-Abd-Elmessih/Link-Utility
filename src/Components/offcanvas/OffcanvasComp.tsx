@@ -1,6 +1,5 @@
-import styles from "./OffcanvasComp.module.css";
 import { useState } from "react";
-import { Accordion } from "react-bootstrap";
+import { Accordion, Container, Navbar } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { FaBars, FaGithub, FaLinkedin, FaPhoneAlt } from "react-icons/fa";
@@ -8,20 +7,41 @@ import { SiGmail } from "react-icons/si";
 import AccordionItemComp from "../AccordionItem/AccordionItemComp";
 import { Link } from "react-router-dom";
 
+// List Component
+function ListItem({ to, text, onClick }: { to: string; text: string; onClick: () => void }) {
+  return (
+    <li className="border-bottom pb-2">
+      <Link to={to} className="text-decoration-none text-dark" onClick={onClick}>
+        {text}
+      </Link>
+    </li>
+  );
+}
+
 export default function OffcanvasComp() {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
   return (
-    <div className="position-fixed top-50 start-0 translate-middle-y">
-      <Button variant="" onClick={handleShow}>
-        <FaBars />
-      </Button>
-
+    <div>
+      {/* Navbar */}
+      <Navbar expand="lg" className="bg-body-tertiary">
+        <Container fluid>
+          <Button variant="" onClick={handleShow}>
+            <FaBars />
+          </Button>
+          <Navbar.Brand as={Link} to={'/'}>Link Utility</Navbar.Brand>
+        </Container>
+      </Navbar>
+      {/* Offcanvas */}
       <Offcanvas show={show} onHide={handleClose} placement="start">
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title className="fs-3"><Link to={'/'} className="text-decoration-none text-dark">Link Utility</Link></Offcanvas.Title>
+          <Offcanvas.Title className="fs-3">
+            <Link to={"/"} onClick={handleClose} className="text-decoration-none text-dark">
+              Link Utility
+            </Link>
+          </Offcanvas.Title>
         </Offcanvas.Header>
 
         <Offcanvas.Body className="d-flex flex-column h-100 justify-content-between">
@@ -37,22 +57,18 @@ export default function OffcanvasComp() {
             <Accordion>
               <AccordionItemComp
                 eventKey="0"
+                title="Styles"
                 content={
-                  <ol className="d-flex flex-column gap-2">
-                    <li className="border-bottom">
-                      <Link to={"/icons"} className="text-decoration-none text-dark">Icons</Link>
-                    </li>
-                    <li className="border-bottom">
-                      <Link to={"/animation"} className="text-decoration-none text-dark">Animation</Link>
-                    </li>
+                  <ol className="d-flex flex-column gap-3">
+                    <ListItem to={'/icons'} text="Icons" onClick={handleClose}/>
+                    <ListItem to={'/animation'} text="Animation" onClick={handleClose}/>
                   </ol>
                 }
-                title="Styles"
               />
               <AccordionItemComp
                 eventKey="1"
-                content={`Lorem`}
                 title="Package #2"
+                content={`Lorem`}
               />
               <AccordionItemComp
                 eventKey="2"
@@ -62,38 +78,38 @@ export default function OffcanvasComp() {
             </Accordion>
           </main>
           {/* Footer Section */}
-          <footer className="mt-3 pt-3 border-top text-center">
+          <footer className="mt-3 pt-3 border-top ">
             <p className="mb-1">
               Created by <span className="fw-bold">Abanoub Abd Elmessih</span>
             </p>
-            <ul className="list-unstyled m-0 pb-1 d-flex justify-content-center align-items-center">
-              <li className={styles.brandsIcon}>
+            <ul className="list-unstyled m-0 pt-2 d-flex justify-content-start gap-2 align-items-center">
+              <li className="">
                 <a
                   href="https://github.com/Abanoub-Abd-Elmessih"
                   target="_blank"
                 >
-                  <FaGithub className={styles.footerIcons} />
+                  <FaGithub className={'text-dark fs-5'} />
                 </a>
               </li>
-              <li className={styles.brandsIcon}>
+              <li className="">
                 <a
                   href="https://www.linkedin.com/in/abanoub-abd-elmessih/"
                   target="_blank"
                 >
-                  <FaLinkedin className={styles.footerIcons} />
+                  <FaLinkedin className={'text-dark fs-5'} />
                 </a>
               </li>
-              <li className={styles.brandsIcon}>
+              <li className="">
                 <a
                   href="mailto:Abanoubabdelmessih110@gmail.com"
                   target="_blank"
                 >
-                  <SiGmail className={styles.footerIcons} />
+                  <SiGmail className={'text-dark fs-5'} />
                 </a>
               </li>
-              <li className={styles.brandsIcon}>
+              <li className="">
                 <a href="tel:+20 155 956 6765" target="_blank">
-                  <FaPhoneAlt className={styles.footerIcons} />
+                  <FaPhoneAlt className={'text-dark fs-6'} />
                 </a>
               </li>
             </ul>
