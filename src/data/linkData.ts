@@ -19,9 +19,21 @@ export const linkData = [
     },
     {
       category: "Animation",
+      header: "Anime.js",
+      text: "A lightweight JavaScript animation library that works well with both plain JavaScript and React. It can animate CSS properties, SVG, DOM elements, and JavaScript objects.",
+      url: "https://animejs.com/",
+    },
+    {
+      category: "Animation",
       header: "Animista",
       text: "Animista offers an extensive collection of animations that can be previewed in real-time. Users can choose from different categories, making it easy to find the perfect effect for their project.",
       url: "https://animista.net/",
+    },
+    {
+      category: "Animation",
+      header: "React Transition Group",
+      text: "A popular animation library for handling component transitions in React. It provides low-level hooks to animate transitions when components enter or leave the DOM.",
+      url: "https://reactcommunity.org/react-transition-group/",
     },
     {
       category: "Animation",
