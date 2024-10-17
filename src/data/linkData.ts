@@ -23,5 +23,23 @@ export const linkData = [
       text: "Animista offers an extensive collection of animations that can be previewed in real-time. Users can choose from different categories, making it easy to find the perfect effect for their project.",
       url: "https://animista.net/",
     },
+    {
+      category: "Animation",
+      header: "React Spring",
+      text: "A spring-physics-based animation library for React that provides fluid and interactive animations.",
+      url: "https://react-spring.dev/",
+    },
+    {
+      category: "Animation",
+      header: "GSAP (GreenSock Animation Platform)",
+      text: "A highly popular and performance-optimized JavaScript animation library that can be used with React. GSAP is great for complex animations and has been widely used in the industry.",
+      url: "https://gsap.com/",
+    },
+    {
+      category: "Animation",
+      header: "Lottie (React Lottie)",
+      text: "Lottie is used to render animations exported from Adobe After Effects as JSON, making it easy to add rich, high-quality animations.",
+      url: "https://chenqingspring.github.io/react-lottie/?selectedKind=Lottie%20Animation%20View&selectedStory=with%20control&full=0&down=1&left=1&panelRight=0&downPanel=kadirahq%2Fstorybook-addon-actions%2Factions-panel",
+    },
   ];
   
