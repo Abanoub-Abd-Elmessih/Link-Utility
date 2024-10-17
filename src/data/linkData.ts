@@ -65,5 +65,11 @@ export const linkData = [
       text: "Lottie is used to render animations exported from Adobe After Effects as JSON, making it easy to add rich, high-quality animations.",
       url: "https://chenqingspring.github.io/react-lottie/?selectedKind=Lottie%20Animation%20View&selectedStory=with%20control&full=0&down=1&left=1&panelRight=0&downPanel=kadirahq%2Fstorybook-addon-actions%2Factions-panel",
     },
+    {
+      category: "Animation",
+      header: "CSS Animation",
+      text: "CSS Animation is a great resource offering free and premium CSS animations, from text effects to hover interactions, all built with pure CSS. It also features tutorials and examples to help developers easily add smooth, engaging animations to their projects.",
+      url: "https://cssanimation.io/",
+    },
   ];
   
