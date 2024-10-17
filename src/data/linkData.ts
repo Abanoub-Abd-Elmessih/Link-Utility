@@ -12,6 +12,18 @@ export const linkData = [
       url: "https://fontawesome.com/",
     },
     {
+      category: "Icons",
+      header: "Material UI Icons",
+      text: "The official icon library for Material Design, used by Google's UI design system. It works well with the Material-UI React library but can also be used independently.",
+      url: "https://mui.com/material-ui/material-icons/",
+    },
+    {
+      category: "Icons",
+      header: "Feather Icons",
+      text: "A collection of simple, clean, and open-source icons designed to be highly customizable. Feather Icons is often used for minimalist designs.",
+      url: "https://feathericons.com/",
+    },
+    {
       category: "Animation",
       header: "Framer Motion",
       text: "Framer Motion is a library for creating smooth animations and interactions for React components.",
