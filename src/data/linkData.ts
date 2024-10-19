@@ -24,6 +24,24 @@ export const linkData = [
       url: "https://feathericons.com/",
     },
     {
+      category: "Icons",
+      header: "Octicons",
+      text: "GitHub's official icon library, Octicons are simple and useful for building web apps, especially ones that aim to maintain a clean, technical look.",
+      url: "https://primer.style/foundations/icons",
+    },
+    {
+      category: "Icons",
+      header: "Tabler Icons",
+      text: "A set of open-source, pixel-perfect icons designed to be simple and clean. They are SVG-based and optimized for use with modern web apps.",
+      url: "https://tabler.io/icons",
+    },
+    {
+      category: "Icons",
+      header: "Ant Design Icons",
+      text: "The official icon library for Ant Design, a popular React UI framework. It contains a comprehensive set of icons that can be used with or without the Ant Design system.",
+      url: "https://ant.design/components/icon",
+    },
+    {
       category: "Animation",
       header: "Framer Motion",
       text: "Framer Motion is a library for creating smooth animations and interactions for React components.",
