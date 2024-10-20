@@ -67,8 +67,12 @@ export default function OffcanvasComp() {
               />
               <AccordionItemComp
                 eventKey="1"
-                title="Package #2"
-                content={`Lorem`}
+                title="React Validation"
+                content={
+                  <ol className="d-flex flex-column gap-3">
+                    <ListItem to={'/validation'} text="Validation" onClick={handleClose}/>
+                  </ol>
+                }
               />
               <AccordionItemComp
                 eventKey="2"

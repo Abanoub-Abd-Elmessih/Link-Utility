@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Layout from './Pages/Layout/Layout';
 import Icons from './Pages/Icons/Icons';
 import Animation from './Pages/Animation/Animation';
+import Validation from './Pages/Validation/Validation';
 
 function App() {
   const router = createBrowserRouter([
@@ -11,6 +12,7 @@ function App() {
     {index:true , element:<Home/>},
     {path:'icons' , element:<Icons/>},
     {path:'animation' , element:<Animation/>},
+    {path:'validation' , element:<Validation/>},
   ]}
   ])
   return (

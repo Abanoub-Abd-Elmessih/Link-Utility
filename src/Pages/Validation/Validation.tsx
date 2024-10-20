@@ -1,4 +1,3 @@
-import React from 'react'
 import { linkData } from '../../data/linkData';
 import CardComp from '../../Components/CardComp/CardComp';
 import { Container } from 'react-bootstrap';

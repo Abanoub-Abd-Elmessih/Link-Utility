@@ -91,5 +91,41 @@ export const linkData = [
       url: "https://cssanimation.io/",
     },
     // **************** Validation ***********************
+    {
+      category: "Validation",
+      header: "Formik",
+      text: "Simplifies form handling and validation. Integrates with Yup for schema-based validation.",
+      url: "https://formik.org/",
+    },
+    {
+      category: "Validation",
+      header: "React Hook Form",
+      text: "Lightweight, performant form validation using hooks with minimal re-renders.",
+      url: "https://react-hook-form.com/",
+    },
+    {
+      category: "Validation",
+      header: "Yup",
+      text: "Schema-based validation library, often used with Formik or React Hook Form.",
+      url: "https://github.com/jquense/yup",
+    },
+    {
+      category: "Validation",
+      header: "React Final Form",
+      text: "Flexible and fast form state management with declarative validation.",
+      url: "https://final-form.org/react",
+    },
+    {
+      category: "Validation",
+      header: "Validator.js",
+      text: "Simple validation utilities for common input types like email and URLs.",
+      url: "https://github.com/validatorjs/validator.js",
+    },
+    {
+      category: "Validation",
+      header: "",
+      text: "",
+      url: "",
+    },
   ];
   
