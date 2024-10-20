@@ -41,6 +41,7 @@ export const linkData = [
       text: "The official icon library for Ant Design, a popular React UI framework. It contains a comprehensive set of icons that can be used with or without the Ant Design system.",
       url: "https://ant.design/components/icon",
     },
+    // **************** Animation ***********************
     {
       category: "Animation",
       header: "Framer Motion",
@@ -89,5 +90,6 @@ export const linkData = [
       text: "CSS Animation is a great resource offering free and premium CSS animations, from text effects to hover interactions, all built with pure CSS. It also features tutorials and examples to help developers easily add smooth, engaging animations to their projects.",
       url: "https://cssanimation.io/",
     },
+    // **************** Validation ***********************
   ];
   
