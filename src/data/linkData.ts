@@ -124,27 +124,33 @@ export const linkData = [
     // **************** Notification ***********************
     {
       category: "Notification",
-      header: "",
-      text: "",
-      url: "",
+      header: "react-toastify",
+      text: "A simple and customizable toast notification library with minimal configuration.",
+      url: "https://fkhadra.github.io/react-toastify/introduction/",
     },
     {
       category: "Notification",
-      header: "",
-      text: "",
-      url: "",
+      header: "notistack",
+      text: "A powerful notification system for Material-UI with support for stacking and action buttons.",
+      url: "https://github.com/iamhosseindhv/notistack",
     },
     {
       category: "Notification",
-      header: "",
-      text: "",
-      url: "",
+      header: "react-hot-toast",
+      text: " A lightweight toast notification library with smooth animations and minimal setup.",
+      url: "https://react-hot-toast.com/",
     },
     {
       category: "Notification",
-      header: "",
-      text: "",
-      url: "",
+      header: "reapop",
+      text: " A customizable notification system supporting various themes and easy integration.",
+      url: "https://louisbarranqueiro.github.io/reapop/",
+    },
+    {
+      category: "Notification",
+      header: "rc-notification",
+      text: "A low-level notification component that offers flexibility for building custom notifications.",
+      url: "https://notification-react-component.vercel.app/",
     },
   ];
   
