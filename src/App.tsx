@@ -5,6 +5,7 @@ import Layout from './Pages/Layout/Layout';
 import Icons from './Pages/Icons/Icons';
 import Animation from './Pages/Animation/Animation';
 import Validation from './Pages/Validation/Validation';
+import Notification from './Pages/Notification/Notification';
 
 function App() {
   const router = createBrowserRouter([
@@ -13,6 +14,7 @@ function App() {
     {path:'icons' , element:<Icons/>},
     {path:'animation' , element:<Animation/>},
     {path:'validation' , element:<Validation/>},
+    {path:'notification' , element:<Notification/>},
   ]}
   ])
   return (

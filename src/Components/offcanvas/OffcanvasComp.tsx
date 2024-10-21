@@ -76,8 +76,12 @@ export default function OffcanvasComp() {
               />
               <AccordionItemComp
                 eventKey="2"
-                title="Package #3"
-                content={`Google`}
+                title="Notification"
+                content={
+                  <ol className="d-flex flex-column gap-3">
+                    <ListItem to={'/notification'} text="Notification" onClick={handleClose}/>
+                  </ol>
+                }
               />
             </Accordion>
           </main>
